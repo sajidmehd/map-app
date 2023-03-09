@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Map Integration</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-t6Y5Zgs8sS-MV2e7Ra74hOrsGf3Ufq0"></script>
+</head>
+<body>
+  <div class="form-inputs">
+    <label for="from">From:</label>
+    <input type="text" id="from">
+
+    <label for="to">To:</label>
+    <input type="text" id="to">
+
+    <button onclick="findRoute()">Find Route</button>
+  </div>
+  
+  <div class="total_distance">
+    <div id="distance"></div>
+  </div>
+  
+  <div id="map">
+    <iframe
+      width="800"
+      height="500"
+      style="border:0"
+      loading="lazy"
+      allowfullscreen
+      referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA-t6Y5Zgs8sS-MV2e7Ra74hOrsGf3Ufq0
+        &q=Space+berlin">
+    </iframe>
+  </div>
+  
+  <script src="scripts.js"></script>
+</body>
+</html>
